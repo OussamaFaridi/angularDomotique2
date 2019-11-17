@@ -1,0 +1,24 @@
+<div class="col-xs-12">
+    <h2>Mes appareils</h2>
+    <p>Mis a jour : {{ lastUpdate | async | date}}</p>
+
+    
+    <ul class="list-group">
+      
+
+      <app-appareil *ngFor="let appareil of appareils; let i=index"
+                      [index]="i"
+                     [appareilName]="appareil.name" 
+                    [appareilStatus]="appareil.status"
+                    [appareilEmplacement]="appareil.emplacement"
+                    [appareilEtat]="appareil.etat"
+                    
+                    [id]="appareil.id">
+
+      </app-appareil>
+
+      <app-control></app-control>
+      
+  </ul>
+   
+  </div>

@@ -1,0 +1,27 @@
+
+<div class="jumbotron vertical-center">
+ <button class="btn btn-success" 
+ (click)="onAllumer()"
+ >Tout Allumer</button>
+
+ <button class="btn btn-danger" 
+ (click)="onEtteindre()"
+ >  Tout Etteindre</button>
+
+ <button class="btn btn-success" 
+ (click)="onConnecter()"
+ >Tout Connecter</button>
+
+ <button class="btn btn-danger" 
+ (click)="onDeconnecter()"
+ >  Tout Déconnecter</button>
+
+ <button class="btn btn-info" 
+ (click)="activerControl()"
+ >Ajouter Objet</button>
+
+ <app-edit-appareil-component *ngIf="controlActive===true"></app-edit-appareil-component>
+
+ 
+
+</div>
